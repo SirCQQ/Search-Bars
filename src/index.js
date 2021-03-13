@@ -1,17 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
+import React from "react";
+import ReactDOM from "react-dom";
+import "./App.css";
+import {countrie,countries_with_history} from './lists'
+import StaticSearch from "./components/StaticSearch"
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div className="App">
+      <div>
+        <h2>Static Search</h2>
+        <StaticSearch placeholder="Ex Australia" searchTitle="Countries to search through" list_of_items={countrie}/>
+      </div>
+    </div>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
