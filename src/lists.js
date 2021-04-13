@@ -8,6 +8,7 @@ export const countries_with_history = [
   { icon: "history", name: "Sierra Leone" },
   { icon: "history", name: "Turkmenistan" },
   { icon: "history", name: "Zambia" },
+  { icon: "history", name: "Romania" },
 ];
 export const countrie = [
   { name: "Afghanistan" },
